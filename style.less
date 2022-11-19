@@ -1,0 +1,30 @@
+@base-color:#333;
+@red-color:#F33;
+// .box
+.box{
+  width: 800px;
+  border:1px solid @base-color;
+  margin:auto;
+  padding:30px;
+  box-sizing: border-box;
+  // .box__title
+  &__title{
+    font-size: 30px;
+    color: @base-color;
+  }
+  // .box__text
+  &__text{
+    margin: auto;
+    border-bottom:1px solid @base-color;
+    margin-bottom: 10px;
+    &:hover{
+      opacity: 0.8;
+    }
+    // .box__text--red
+    &--red{
+      color: @red-color;
+      border-color: @red-color;
+    }
+  }
+
+}
